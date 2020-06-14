@@ -1,6 +1,7 @@
 # 30DaysToCode
 This is a personal practice repository that I have created for the SDE practice problems. Any viewer is most welcomed to check out and get help.
 # Credits for the problem selection to the "Raj Vikramaditya" and a huge thanks to him and his youtube channel "take U forward"
+# Almost all the problems are picked from geeksforgeeks.
 
 # SDE-PROBLEMS
 # Day1: (Arrays)
