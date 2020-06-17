@@ -1,0 +1,8 @@
+Day3: (Math)
+All the Codes are contributed by Himanshu Kaushik (linkedin.com/in/himanshu-kaushik-a7862516b)
+1. Excel Column Number
+2. Find n^x in log N
+3. Count trailing zeros in factorial of a number
+4. Find GCD in Log N
+5. Grid Unique Paths
+6. Go through Puzzles from GFG (Search on own)
