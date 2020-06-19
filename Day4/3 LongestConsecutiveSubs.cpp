@@ -17,8 +17,8 @@ Constraints:
 */
 
 // Code contributed By Himanshu Kaushik (linkedin.com/in/himanshu-kaushik-a7862516b)
-
-// A simple approach is to check out all the numbers after storing them in a set.
+// A simple approach is to check out all the numbers after storing them in a set. This has O(max(arr))
+/*
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -47,6 +47,36 @@ int main() {
 	       finans = max(finans, ans);
 	    }
 	    cout << finans << endl;
+	}
+	return 0;
+}
+
+*/
+
+// This approach is hash based.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t, n;
+	cin >> t;
+	while(t--){
+	    cin >> n;
+	    set<int> s;
+        int arr[n], ans = 0;
+	    for(int i=0; i<n; i++){
+	        cin >> arr[i];
+	        s.insert(arr[i]);
+	    }
+        for(int i=0; i<n; i++){
+			if(s.find(arr[i]+1) == s.end()){
+				int j = 1;
+				while(s.find(arr[i]-j) != s.end())	j++;
+				ans = max(ans, j);
+			}
+		}
+        cout << ans << endl;
 	}
 	return 0;
 }
