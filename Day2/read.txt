@@ -1,6 +1,5 @@
 Day2: (Arrays)
 All Codes are contributed By Himanshu Kaushik (linkedin.com/in/himanshu-kaushik-a7862516b)
-
 1. Set Matrix Zeros
 2. Pascal Triangle
 3. Next Permutation
