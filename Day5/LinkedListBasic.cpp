@@ -1,4 +1,6 @@
-// This module covers the basic of linkedlist implementation such as insertion, deletion etc.
+// This module covers the basic of linkedlist implementation such as insertion, deletion etc. Comment the part you need to check out
+// as it is not menu driven !!
+
 // Code contributed By Himanshu Kaushik (linkedin.com/in/himanshu-kaushik-a7862516b)
 
 #include<bits/stdc++.h>
@@ -46,8 +48,6 @@ void insert_pos(int x, int n){
         start = start->next;
         i++;
     }
-    // cout << "\nIt worked till here\n";
-    // cout << start->data <<endl;
     temp->next = start->next;
     start->next = temp;
 
@@ -67,7 +67,7 @@ void delete_end(){
         return;
     }
     if(temp->next == NULL){
-        delete(head);
+        head = NULL;
         return;
     }
     while(temp->next->next!= NULL){
@@ -79,11 +79,19 @@ void delete_end(){
 void delete_pos(int n){
     node* temp = head;
     int i = 0;
+    if(temp == NULL){
+        return;
+    }
+    if(temp->next == NULL){
+        head = NULL;
+    }
     while(i<n-2 and temp->next->next!= NULL){
         i++;
         temp = temp->next;
     }
-
+    node* temp1 = temp->next;
+    temp->next = temp->next->next;
+    delete(temp1);
 }
 
 void display(){
@@ -108,27 +116,27 @@ int main(){
     }
     cout << "\nValues after insertion in end: ";
     display();
-    // cout << "\nEnter number of values for insertion at beginning: ";
-    // cin >> n;
-    // for(int i=0; i<n; i++){
-    //     int temp;
-    //     cin >> temp;
-    //     insert_beg(temp);
-    // }
-    // cout << "\nValues after insertion in beginning: ";
-    // display();
-    // cout << "\nEnter value to be inserted and position respectively: ";
-    // int x;
-    // cin >> x >> n;
-    // insert_pos(x, n);
-    // cout << "\nValues after insertion at given Position: ";
-    // display();
-    // cout << "\nAfter Deleting from beginning: ";
-    // delete_beg();
-    // display();
-    // cout << "\nAfter Deleting from end: ";
-    // delete_end();
-    // display();
+    cout << "\nEnter number of values for insertion at beginning: ";
+    cin >> n;
+    for(int i=0; i<n; i++){
+        int temp;
+        cin >> temp;
+        insert_beg(temp);
+    }
+    cout << "\nValues after insertion in beginning: ";
+    display();
+    cout << "\nEnter value to be inserted and position respectively: ";
+    int x;
+    cin >> x >> n;
+    insert_pos(x, n);
+    cout << "\nValues after insertion at given Position: ";
+    display();
+    cout << "\nAfter Deleting from beginning: ";
+    delete_beg();
+    display();
+    cout << "\nAfter Deleting from end: ";
+    delete_end();
+    display();
     cout << "Enter Position to delete: ";
     cin >> n;
     delete_pos(n);
