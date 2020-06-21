@@ -1,0 +1,8 @@
+Day5: (LinkedList)
+All the Codes are contributed by Himanshu Kaushik (linkedin.com/in/himanshu-kaushik-a7862516b)
+1. Reverse a LinkedList
+2. Find middle of LinkedList
+3. Merge two sorted Linked List
+4. Remove N-th node from back of LinkedList
+5. Delete a given Node when a node is given. (0(1) solution)
+6. Add two numbers as LinkedList
