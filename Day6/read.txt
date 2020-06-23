@@ -1,0 +1,8 @@
+Day6:
+All the Codes are contributed by Himanshu Kaushik (linkedin.com/in/himanshu-kaushik-a7862516b)
+1. Find intersection point of Y LinkedListCheck if a LinkedList is palindrome or not.
+2. Reverse a LinkedList in groups.
+3. Detect a cycle and removing loop(two different questions and same concept)
+4. Flattening of a LinkedList
+5. Rotate a LinkedList
+6. Clone a Linked List with random and next pointer.
